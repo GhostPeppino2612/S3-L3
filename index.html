@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <h1>Lista delle Cose da Fare</h1>
+    <header>
+      <div class="form-sec">
+        <h2>Crea una nuova Nota</h2>
+        <form action="">
+          <div>
+            <label for="title">Inserisci il titolo: </label>
+            <input
+              type="text"
+              placeholder="Inserire il titolo del promemoria"
+              size="20"
+              id="title"
+            />
+          </div>
+          <div>
+            <label for="text">Inserisci la data: </label>
+            <input type="date" id="text" />
+          </div>
+          <div>
+            <label for="areaText">Inserire il contenuto della nota:</label>
+            <textarea name="areaText" id="areaText"></textarea>
+          </div>
+          <input type="submit" value="Crea" />
+        </form>
+      </div>
+    </header>
+    <main>
+      <section class="note-sec">
+        <div class="note-container">
+          <div class="note">
+            <div>
+              <div class="modify-note"><i class="fa-solid fa-pencil"></i></div>
+              <div class="delete-note"><i class="fa-solid fa-circle-xmark"></i></div>
+            </div>
+            <div class="note-title">
+              <p>Andare a fare la spesa</p>
+            </div>
+            <div class="note-date">
+              <p>25/12/2002</p>
+            </div>
+            <div class="note-description">
+              fjefineirgfbenigkbeigebnrgiuegneigegirebgeibrgehrni
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

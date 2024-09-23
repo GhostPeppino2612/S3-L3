@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.2em;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+.form-sec {
+    padding: 1em;
+    margin-inline: auto;
+    width: 20em;
+    background-color: rgb(212, 212, 212);
+    border-radius: 20px;
+}
+
+.form-sec h2 {
+    text-align: center;
+}
+
+.form-sec form div {
+    padding-block: 0.5em;
+}
+
+.form-sec form div label, .form-sec form div input {
+    vertical-align: middle;
+}
+.form-sec form div input {
+    padding: 0.5em;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+}
+
+.form-sec div textarea {
+    margin-block-start: 0.5em;
+    margin-inline: auto;
+    width: 250px;
+    height: 100px;
+    resize: none;
+    border-radius: 5px;
+    border: 0;
+    display: block;
+}
+
+.form-sec input[type="submit"] {
+    margin-inline: auto;
+    display: block;
+    padding: 0.7em 2em;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+}
+
+.form-sec input[type="submit"]:hover {
+    background-color: aquamarine;
+    transition: 0.5s;
+    border: 1px solid black;
+}
+
+.note-sec {
+    margin-block: 2em;
+    background-color: rgb(212, 212, 212);
+    padding: 1em;
+}
+
+.note-container {
+    margin-inline: auto;
+    width: 90%;
+    font-size: 0;
+}
+
+.note {
+    font-size: initial;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background-color: white;
+    padding: 0.5em;
+    width: 30%;
+    height: auto;
+    display: inline-block;
+    border-radius: 1em;
+    margin-block-end: 1em;
+    margin-inline-end: 1%;
+    vertical-align:text-top ;
+}
+
+.note .note-title {
+    font-size: 1.5em;
+}
+
+.note .note-description {
+    word-break: break-all;
+}
+
+.note div .modify-note, .note div .delete-note {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.note div .modify-note:hover, .note div .delete-note:hover {
+    transform: scale(1.5);
+    transition: 0.1s ease-out;
+} 
+
+.note div .delete-note {
+    color: red;
+}
